@@ -15,7 +15,7 @@ public class MaxSubArray {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter Array Size :: ");
 		int size = scanner.nextInt();
-		System.out.println("Enter "+size +" Elements :: ");
+		System.out.println("Enter "+size +" +Elements :: ");
 		int [] array = new int[size];
 		for(int i=0;i<size;i++) {
 			array[i] = scanner.nextInt();
