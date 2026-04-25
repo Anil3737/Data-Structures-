@@ -19,6 +19,19 @@ public class MoveZeroes {
 		}
 
 	}
+	void moveZeroresEnd(int [] nums) {
+		int j=0;
+		for(int i=0;i<nums.length;i++) {
+			int temp = nums[i];
+			nums[i] = nums[j];
+			nums[j] = temp;
+			j++;
+		}
+		System.out.println();
+		for (int i : nums) {
+			System.out.print(i + " ");
+		}
+	}
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -28,5 +41,11 @@ public class MoveZeroes {
 			array[i] = scanner.nextInt();
 		}
 		moveZerores(array);
+		
+		MoveZeroes mz = new MoveZeroes();
+		mz.moveZeroresEnd(array);
+		
+		
+		scanner.close();
 	}
 }
