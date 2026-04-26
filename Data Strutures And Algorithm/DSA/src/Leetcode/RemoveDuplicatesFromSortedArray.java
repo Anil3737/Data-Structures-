@@ -17,6 +17,7 @@ public class RemoveDuplicatesFromSortedArray {
 		}
 
 		return j + 1;
+	
 	}
 
 	public static void main(String[] args) {
