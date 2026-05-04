@@ -33,7 +33,7 @@ public class MaximumProductSubarray {
 		}
 
 		System.out.println(maximumProduct(array));
-
+		scanner.close();
 	}
 
 }
